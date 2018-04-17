@@ -1,0 +1,281 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+  overflow-x: hidden;
+  background-color : #f2f2f2;
+}
+
+footer {
+    background: #737373;
+    align-content: center;
+    height: 30px;
+    text-decoration-color: white;
+}
+
+hr.style1 {
+    top: 90px;
+    border-top: 1px solid #8c8b8b;
+    width: 75%;
+    margin-bottom: 0.5em;
+}
+
+.first{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.second{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.third {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.fourth {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.graphics {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.page-graphic {
+    padding:10px;
+    max-width: 59%;
+    height: auto;
+}
+.sc-graphic {
+    padding: 5px;
+    max-width: 35%;
+    height: auto;
+}
+
+.sign-graphic {
+    padding: 5px;
+    max-width: 46%;
+    height: auto;
+}
+.small-graphic {
+    padding: 3px;
+    max-width: 10%;
+    height: auto;
+}
+
+.h2 {
+    font-size: 20px;
+}
+
+.subTitleText { 
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.75em;
+}
+
+.spaceBottom{
+    margin-bottom: 2em;
+}
+.paragraphText{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.myPicture{
+    margin-top: 27px;
+    max-width: 90%;
+    height: auto;
+}
+
+.myLogo {
+    max-width: 60%;
+    height: auto;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.titleText{
+    font-family : 'Raleway', sans-serif;
+    font-weight : 400;
+    text-align:center;
+
+}
+
+
+#wrapper {
+  padding-left: 350px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 0px;
+}
+
+#sidebar-wrapper {
+    background: #262626;
+    z-index: 1000;
+    position: fixed;
+    left: 350px;
+    width: 350px;
+    height: 100%;
+    margin-left: -350px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.end {
+    background: #737373;
+    width: 100%;
+}
+
+
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 0px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -350px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 330px;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fa-ul {
+    position: absolute;
+    top: 490px;
+    width: 350px;
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+
+    .fa-ul li {
+        font-family: 'Roboto Slab', serif;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 0.9s ease;
+        text-indent: 10px;
+        line-height: 40px;
+    }
+
+    .fa-ul li a{
+     
+        color: white;
+       
+    }
+
+.fa-ul li:hover {
+    text-decoration: none;
+    background-color: #0d0d0d;
+}
+
+.nameText {
+    font-family: 'Roboto Slab', serif;
+    font-weight : 300;
+    color: #ccc;
+}
+.first {
+    margin-top: 40px;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+    .sidebar-nav li a {
+        font-family: 'Roboto Slab', serif;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 0.9s ease;
+    }
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  background-color: #0d0d0d;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  /*text-decoration: none;*/
+}
+.sidebar-brand {
+    height: 65px;
+    font-size: 35px;
+    line-height: 60px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.sidebar-brand a {
+  color: white;
+}
+
+.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 350px;
+  }
+  #wrapper.toggled {
+    padding-left: 0px;
+  }
+  #sidebar-wrapper {
+    width: 350;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
