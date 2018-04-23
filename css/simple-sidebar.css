@@ -100,6 +100,7 @@ hr.style1 {
     margin-top: 27px;
     max-width: 90%;
     height: auto;
+    align-content: center;
 }
 
 .myLogo {
@@ -109,16 +110,36 @@ hr.style1 {
     margin-top: 40px;
 }
 
-.titleText{
-    font-family : 'Raleway', sans-serif;
-    font-weight : 400;
-    text-align:center;
+.menu-icon {
+    width: 35px;
+    height: 45px;
+    align-content: center;
+}
 
+.header-menu{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+}
+
+.header-menu a {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+}
+
+
+
+
+.titleText {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 
 #wrapper {
-  padding-left: 350px;
+  padding-left: 250px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -133,10 +154,10 @@ hr.style1 {
     background: #262626;
     z-index: 1000;
     position: fixed;
-    left: 350px;
-    width: 350px;
+    left: 250px;
+    width: 250px;
     height: 100%;
-    margin-left: -350px;
+    margin-left: -250px;
     overflow-y: auto;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -148,6 +169,8 @@ hr.style1 {
     background: #737373;
     width: 100%;
 }
+
+
 
 
 
@@ -163,7 +186,7 @@ hr.style1 {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -350px;
+  margin-right: -250px;
 }
 
 
@@ -172,7 +195,7 @@ hr.style1 {
 .sidebar-nav {
     position: absolute;
     top: 330px;
-    width: 350px;
+    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -181,7 +204,7 @@ hr.style1 {
 .fa-ul {
     position: absolute;
     top: 490px;
-    width: 350px;
+    width: 250px;
     margin-left: 0;
     padding: 0;
     list-style: none;
@@ -203,6 +226,8 @@ hr.style1 {
         color: white;
        
     }
+
+
 
 .fa-ul li:hover {
     text-decoration: none;
@@ -257,19 +282,26 @@ hr.style1 {
   background: none;
 }
 
-@media(min-width:768px) {
+@media(min-width:1000px) {
+
+    .header-menu {
+        display: none;
+    }
+
+
+
   #wrapper {
     padding-left: 350px;
   }
-  #wrapper.toggled {
-    padding-left: 0px;
-  }
+    #wrapper.toggled {
+        padding-left: 350px;
+    }
   #sidebar-wrapper {
-    width: 350;
+    width: 350px;
   }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 0px;
-  }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 350px;
+    }
   #page-content-wrapper {
     padding: 20px;
     position: relative;
